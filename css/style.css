@@ -380,31 +380,15 @@ main{
     .grid-tarjeta-productos h3 {
         font-size: 20px;
     }
-}
-
-@media screen and (max-width:1051px) {
-    
-    .grid-tarjeta-productos {
-        width: 200px;
-        height: 245px;
-    }
-
-    .grid-tarjeta-productos img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .grid-tarjeta-productos h3 {
-        font-size: 12px;
-    }
 
     .grid-tarjeta-productos a {
         font-size: 12px;
     }
-
 }
 
-@media screen and (max-width:751px) {
+
+
+@media screen and (max-width:1051px) {
     .grid-producto-primera-fila {
         grid-auto-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
@@ -460,7 +444,7 @@ main{
     }
 }
 
-@media screen and (max-width:529px) {
+@media screen and (max-width:726px) {
     .categoria {
         font-size: 10px;
     }
@@ -522,7 +506,7 @@ main{
 
 
 
-@media screen and (max-width:327px) {
+@media screen and (max-width:420px) {
     .grid-producto-primera-fila {
         /*GRID*/
         display: grid;
@@ -809,7 +793,7 @@ main{
     .pedidos-personalizados-primera-fila {
         font-size: 18px;
         width: 500px;
-        height: 300px;
+        height: 350px;
         
     }
 }
@@ -823,7 +807,7 @@ main{
     .pedidos-personalizados-primera-fila {
         font-size: 15px;
         width: 400px;
-        height: 300px;
+        height: 350px;
         
     }
 }
@@ -837,7 +821,7 @@ main{
     .pedidos-personalizados-primera-fila {
         font-size: 13px;
         width: 250px;
-        height: 400px;
+        height: 500px;
         
     }
 }
@@ -887,6 +871,13 @@ main{
     margin-right: 100px;
     margin-top: 40px;
 }
+
+.acerca-de-segunda-fila div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 .acerca-de-segunda-fila p{
     display: flex;
@@ -981,6 +972,8 @@ main{
         width: 200px;
         height: 150px;
         margin: 90px 35px 90px 20px;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -991,6 +984,7 @@ main{
         margin-right: 10px;
         justify-content: center;
         flex-direction: column;
+        text-align: center;
         
     }
     
@@ -1015,6 +1009,7 @@ main{
         margin-right: 10px;
         justify-content: center;
         flex-direction: column;
+        text-align: center;
     }
     
     .acerca-de-segunda-fila p{
@@ -1028,6 +1023,7 @@ main{
         height: 150px;
         margin: 20px 25px 20px 10px;
         justify-content: center;
+        flex-direction: column;
         
     }
 }
