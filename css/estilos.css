@@ -1,0 +1,955 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sedan:ital@0;1&display=swap");
+/**----RESET-----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: rgba(252, 205, 213, 0.897);
+}
+
+/**-----HEADER boostrap-----*/
+.barra-de-navegacion-color {
+  background-color: pink;
+}
+
+.tipografia-nav {
+  font-family: "Sedan", serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.tipografia-nav-logo {
+  font-family: "Lobster", sans-serif;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.barra-de-navegacion-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+}
+
+.barra-de-navegacion-hover:hover {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.categoria {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.item-uno {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.item-dos {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.item-tres {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.item-cuatro {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.item-cinco {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.item-seis {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.item-siete {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.item-ocho {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+/*----INDEX----*/
+main .fondo {
+  height: 700px;
+  width: 100%;
+  background-image: url(../images/shinyperleary-fondo.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .fondo h1 {
+  font-family: "Lobster", sans-serif;
+  padding: 6px;
+  border: 4px solid black;
+  font-size: 50px;
+  background-color: solid black;
+  margin-top: 20px;
+  color: black;
+}
+main .fondo h2 a {
+  margin-top: 40px;
+  background-color: black;
+  padding: 6px;
+  border-radius: 20px;
+  font-size: 35px;
+  font-family: "Lobster", sans-serif;
+  text-decoration: none;
+  color: white;
+  width: 230px;
+  justify-content: center;
+  display: flex;
+}
+main .fondo h2 a:hover {
+  background-color: white;
+  color: black;
+}
+main .separador {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .separador p {
+  font-family: "Lobster", sans-serif;
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  padding: 6px;
+  width: 300px;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  border-radius: 20px;
+}
+main .tarjeta {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+main .tarjeta .tarjeta-productos {
+  border: 4px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.44);
+}
+main .tarjeta .tarjeta-productos img {
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+main .tarjeta .tarjeta-productos h3 {
+  font-size: 25px;
+  font-family: "Sedan", serif;
+}
+main .tarjeta .tarjeta-productos a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  margin: 4px;
+  padding: 6px;
+  border-radius: 20px;
+}
+main .tarjeta .tarjeta-productos a:hover {
+  background-color: gray;
+  color: black;
+}
+main .ver-mas {
+  display: flex;
+  justify-content: center;
+}
+main .ver-mas a {
+  margin-top: 100px;
+  background-color: black;
+  margin-bottom: 125px;
+  padding: 6px;
+  border-radius: 20px;
+  font-size: 35px;
+  font-family: "Lobster", sans-serif;
+  text-decoration: none;
+  color: white;
+  width: 300px;
+  justify-content: center;
+  display: flex;
+}
+
+/*----PRODUCTOS----*/
+main .grid-producto-primera-fila {
+  /*GRID*/
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 15px;
+}
+main .grid-producto-primera-fila .categoria {
+  display: flex;
+  flex-direction: column;
+  font-family: "Sedan", serif;
+  background-color: pink;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 5px;
+  align-items: center;
+}
+main .grid-producto-primera-fila .grid-tarjeta-productos {
+  border: 4px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.44);
+  margin-top: 10px;
+}
+main .grid-producto-primera-fila .grid-tarjeta-productos img {
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+main .grid-producto-primera-fila .grid-tarjeta-productos h3 {
+  font-size: 25px;
+  font-family: "Sedan", serif;
+}
+main .grid-producto-primera-fila .grid-tarjeta-productos a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  margin: 4px;
+  padding: 6px;
+  border-radius: 20px;
+}
+main .grid-producto-primera-fila .grid-tarjeta-productos a:hover {
+  background-color: gray;
+  color: black;
+}
+
+/*----PEDIDOS PERSONALIZADOS----*/
+main .pedidos-personalizados-primer-bloque {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .pedidos-personalizados-primer-bloque .separador h2 {
+  font-family: "Lobster", sans-serif;
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  background-color: black;
+  border-radius: 20px;
+}
+main .pedidos-personalizados-primer-bloque .pedidos-personalizados-primera-fila {
+  font-size: 25px;
+  font-family: "Sedan", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 450px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: pink;
+  padding: 50px;
+  border-radius: 20px;
+}
+main .pedidos-personalizados-primer-bloque .pedidos-personalizados-primera-fila a .footer-logo {
+  width: 80px;
+  height: 80px;
+}
+/*----CONTACTO----*/
+main .contacto .separador {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .contacto .separador h2 {
+  font-family: "Lobster", sans-serif;
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  background-color: black;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+main .contacto div {
+  display: flex;
+  justify-content: center;
+}
+main .contacto div p {
+  font-family: "Sedan", serif;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  background-color: pink;
+  padding: 20px;
+  border-radius: 20px;
+  width: 800px;
+}
+main .formulario {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  border-radius: 20px;
+  width: 60%;
+  margin-left: 20%;
+}
+main .formulario .formulario-primera-fila {
+  display: flex;
+  justify-content: space-between;
+}
+main .formulario .formulario-primera-fila .name {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Sedan", serif;
+  margin-top: 90px;
+  padding: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+main .formulario .formulario-primera-fila .surname {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Sedan", serif;
+  margin-top: 90px;
+  padding: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+main .formulario .formulario-segunda-fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+}
+main .formulario .formulario-segunda-fila .email {
+  display: flex;
+  font-family: "Sedan", serif;
+  font-size: 25px;
+  padding: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+main .formulario .formulario-segunda-fila .genero {
+  display: flex;
+  margin-right: 155px;
+  font-size: 25px;
+  font-family: "Sedan", serif;
+  margin-top: 40px;
+  padding: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+main .formulario .formulario-segunda-fila .genero div ul {
+  list-style: none;
+}
+main .formulario .pais {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Sedan", serif;
+  margin-top: 40px;
+  padding: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+main .formulario .motivo {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Sedan", serif;
+  margin-top: 40px;
+  padding-top: 30px;
+  color: white;
+  border-radius: 20px;
+}
+main .formulario .motivo textarea {
+  display: flex;
+  font-family: "Sedan", serif;
+  font-size: 25px;
+  padding: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+main .formulario .enviar {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  color: white;
+  border-radius: 20px;
+}
+main .formulario .enviar input {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Sedan", serif;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+/*----ACERCA DE----*/
+main .acerca-de-primera-fila {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  border-radius: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+main .acerca-de-primera-fila div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .acerca-de-primera-fila div img {
+  display: flex;
+  justify-content: flex-start;
+  width: 400px;
+  height: 350px;
+  margin: 90px 100px 90px 120px;
+}
+main .acerca-de-primera-fila p {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  margin: 90px 100px 90px 120px;
+  font-family: "Sedan", serif;
+  font-size: 25px;
+}
+main .acerca-de-segunda-fila {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  border-radius: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 40px;
+}
+main .acerca-de-segunda-fila p {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  margin: 90px 100px 90px 120px;
+  font-family: "Sedan", serif;
+  font-size: 25px;
+}
+main .acerca-de-segunda-fila div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .acerca-de-segunda-fila div img {
+  display: flex;
+  justify-content: flex-end;
+  width: 400px;
+  height: 350px;
+  margin: 90px 100px 90px 120px;
+}
+
+footer {
+  background-color: pink;
+}
+footer a {
+  text-align: left;
+}
+footer a .footer-logo {
+  width: 80px;
+  height: 80px;
+}
+
+/*----index----*/
+@media screen and (max-width: 1284px) {
+  main .tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .tarjeta .tarjeta-productos {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 476px) {
+  main .tarjeta .tarjeta-productos img {
+    width: 230px;
+    height: 200px;
+  }
+  main .fondo {
+    height: 700px;
+    width: 100%;
+    background-image: url(../images/fondo-compacto.jpeg);
+  }
+}
+@media screen and (max-width: 322px) {
+  main .fondo h1 {
+    font-size: 35px;
+  }
+  main .fondo h2 a {
+    font-size: 25px;
+    width: 180px;
+  }
+}
+/*----PRODUCTOS----*/
+@media screen and (max-width: 1441px) {
+  main .grid-producto-primera-fila .grid-tarjeta-productos {
+    width: 300px;
+    height: 340px;
+  }
+  main .grid-producto-primera-fila .grid-tarjeta-productos img {
+    width: 200px;
+    height: 200px;
+  }
+  main .grid-producto-primera-fila .grid-tarjeta-productos h3 {
+    font-size: 20px;
+  }
+  main .grid-producto-primera-fila .grid-tarjeta-productos a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1051px) {
+  main .grid-producto-primera-fila {
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .categoria {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .item-uno {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .item-dos {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .item-tres {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .item-cuatro {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .item-cinco {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .item-seis {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .item-siete {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .item-ocho {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+}
+@media screen and (max-width: 726px) {
+  .categoria {
+    font-size: 10px;
+  }
+  main .grid-producto-primera-fila {
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .categoria {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .item-uno {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .item-dos {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .item-tres {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .item-cuatro {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .item-cinco {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .item-seis {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .item-siete {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .item-ocho {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}
+@media screen and (max-width: 420px) {
+  main .grid-producto-primera-fila {
+    /*GRID*/
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .categoria {
+    font-size: 10px;
+  }
+  .categoria {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .item-uno {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .item-dos {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .item-tres {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .item-cuatro {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .item-cinco {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .item-seis {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .item-siete {
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+  .item-ocho {
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+}
+/*----PEDIDOS PERSONALIZADOS----*/
+@media screen and (max-width: 778px) {
+  main .pedidos-personalizados-primer-bloque .separador h2 {
+    font-size: 30px;
+    width: 500px;
+  }
+  main .pedidos-personalizados-primer-bloque .pedidos-personalizados-primera-fila {
+    font-size: 18px;
+    width: 500px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 494px) {
+  main .pedidos-personalizados-primer-bloque .separador h2 {
+    font-size: 20px;
+    width: 300px;
+  }
+  main .pedidos-personalizados-primer-bloque .pedidos-personalizados-primera-fila {
+    font-size: 15px;
+    width: 400px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .pedidos-personalizados-primer-bloque .separador h2 {
+    font-size: 15px;
+    width: 250px;
+  }
+  main .pedidos-personalizados-primer-bloque .pedidos-personalizados-primera-fila {
+    font-size: 13px;
+    width: 250px;
+    height: 500px;
+  }
+}
+/*----CONTACTO----*/
+@media screen and (max-width: 1538px) {
+  main .formulario .formulario-primera-fila {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .formulario .formulario-primera-fila .name {
+    margin-top: 40px;
+  }
+  main .formulario .formulario-primera-fila .surname {
+    margin-top: 40px;
+  }
+  main .formulario .formulario-segunda-fila {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    height: 300px;
+    padding-bottom: 100px;
+  }
+  main .formulario .formulario-segunda-fila .email {
+    margin-top: 90px;
+  }
+  main .formulario .formulario-segunda-fila .genero {
+    margin-right: 0px;
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 812px) {
+  main .contacto .separador h2 {
+    font-size: 20px;
+  }
+  main .contacto div p {
+    font-size: 20px;
+  }
+  main .formulario .formulario-primera-fila .name {
+    font-size: 20px;
+  }
+  main .formulario .formulario-primera-fila .surname {
+    font-size: 20px;
+  }
+  main .formulario .formulario-segunda-fila .email {
+    font-size: 20px;
+  }
+  main .formulario .formulario-segunda-fila .genero {
+    font-size: 20px;
+  }
+  main .pais label {
+    font-size: 20px;
+  }
+  main .motivo textarea {
+    font-size: 20px;
+  }
+  main .formulario {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+@media screen and (max-width: 504px) {
+  main .contacto .separador h2 {
+    font-size: 12px;
+    padding: 15px;
+  }
+  main .contacto div p {
+    font-size: 12px;
+    padding: 15px;
+  }
+  main .formulario .formulario-primera-fila .name {
+    font-size: 12px;
+    padding: 15px;
+  }
+  main .formulario .formulario-primera-fila .surname {
+    font-size: 12px;
+    padding: 15px;
+  }
+  main .formulario .formulario-segunda-fila .email {
+    font-size: 12px;
+    padding: 15px;
+  }
+  main .formulario .formulario-segunda-fila .genero {
+    font-size: 12px;
+    padding: 15px;
+  }
+  main .pais {
+    font-size: 12px;
+    padding: 15px;
+  }
+  main .pais select {
+    font-size: 12px;
+    padding: 15px;
+  }
+  main .pais label {
+    font-size: 12px;
+    padding: 15px;
+  }
+  main .pais label {
+    font-size: 12px;
+    padding: 15px;
+  }
+  main .motivo textarea {
+    font-size: 12px;
+    padding: 5px;
+  }
+  main .formulario {
+    width: 90%;
+    margin-left: 5%;
+  }
+  main .motivo label {
+    font-size: 12px;
+  }
+}
+/*----ACERCA DE----*/
+@media screen and (max-width: 1400px) {
+  main .acerca-de-primera-fila {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  main .acerca-de-primera-fila p {
+    margin: 90px 60px 90px 50px;
+    font-size: 15px;
+  }
+  main .acerca-de-primera-fila div img {
+    width: 300px;
+    height: 250px;
+    margin: 90px 50px 90px 60px;
+  }
+  main .acerca-de-segunda-fila {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  main .acerca-de-segunda-fila p {
+    margin: 90px 50px 90px 60px;
+    font-size: 15px;
+  }
+  main .acerca-de-segunda-fila div img {
+    width: 300px;
+    height: 250px;
+    margin: 90px 60px 90px 50px;
+  }
+}
+@media screen and (max-width: 823px) {
+  main .acerca-de-primera-fila {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  main .acerca-de-primera-fila p {
+    margin: 90px 35px 90px 20px;
+    font-size: 15px;
+  }
+  main .acerca-de-primera-fila div img {
+    width: 200px;
+    height: 150px;
+    margin: 90px 20px 90px 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  main .acerca-de-segunda-fila {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  main .acerca-de-segunda-fila p {
+    margin: 90px 20px 90px 35px;
+    font-size: 15px;
+  }
+  main .acerca-de-segunda-fila div img {
+    width: 200px;
+    height: 150px;
+    margin: 90px 35px 90px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 569px) {
+  main .acerca-de-primera-fila {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .acerca-de-primera-fila p {
+    margin: 20px 25px 20px 10px;
+    font-size: 15px;
+  }
+  main .acerca-de-primera-fila div img {
+    width: 200px;
+    height: 150px;
+    margin: 20px 10px 20px 25px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main .acerca-de-segunda-fila {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .acerca-de-segunda-fila p {
+    margin: 20px 10px 20px 25px;
+    font-size: 15px;
+  }
+  main .acerca-de-segunda-fila div img {
+    width: 200px;
+    height: 150px;
+    margin: 20px 25px 20px 10px;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 569px) {
+  main .acerca-de-primera-fila p {
+    font-size: 12px;
+  }
+  main .acerca-de-segunda-fila p {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
