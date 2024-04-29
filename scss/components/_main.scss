@@ -1,6 +1,8 @@
 /*----INDEX----*/
 
 main {
+
+    
     .fondo{
         height: 700px;
         width: 100%;
@@ -8,32 +10,35 @@ main {
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex, center, center, column);
 
         h1{
-            font-family: "Lobster", sans-serif;
+            font-family: $font-lobster;
             padding: 6px;
             border: 4px solid black;
-            font-size: 50px;
-            background-color: solid black;
+
+            //!OPERACION
+            font-size: $size-title + 10;
+
             margin-top: 20px;
-            color: black;
+            color: $color-terciario;
         }
         h2{
 
             a{
-                margin-top: 40px;
-                background-color: black;
-                padding: 6px;
-                border-radius: 20px;
-                font-size: 35px;
-                font-family: "Lobster", sans-serif;
+                //!MAPA
+                
+                background-color: map-get($boton , bg-boton );
+                border-radius: map-get($boton , borde );
+                padding: map-get($boton , padd );
+                color: map-get($boton , text-color );
+
+                font-size: nth($font-size, 4);
+                font-family: $font-lobster;
                 text-decoration: none;
-                color: white;
+                
                 width: 230px;
+                margin-top: 40px;
                 justify-content: center;
                 display: flex;
                 &:hover{
@@ -47,15 +52,16 @@ main {
         width: 100%;
         display: flex;
         justify-content: center;
+        margin-top: 20px;
         p{
-            font-family: "Lobster", sans-serif;
-            font-size: 50px;
+            font-family: $font-lobster;
+            font-size: nth($font-size, 5);
             text-decoration: none;
             color: white;
             padding: 6px;
             width: 300px;
             display: flex;
-            background-color: black;
+            background-color: $color-terciario;
             justify-content: center;
             border-radius: 20px;
 }
@@ -71,9 +77,7 @@ main {
             border-radius: 20px;
             padding: 10px;
             background-color: white;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+            @include flex (flex, center, center, column);
             flex-wrap: wrap;
             box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.44);
             -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.44);
@@ -85,14 +89,14 @@ main {
                 border-radius: 20px;
             }
             h3{
-                font-size: 25px;
-                font-family: "Sedan", serif;
+                font-size: nth($font-size, 3);
+                font-family: $font-sedan;
             }
             a{
-                font-size: 20px;
+                font-size: nth($font-size, 2);
                 text-decoration: none;
                 color: white;
-                background-color: black;
+                background-color: $color-terciario;
                 margin: 4px;
                 padding: 6px;
                 border-radius: 20px;
@@ -108,12 +112,12 @@ main {
         justify-content: center;
         a{
             margin-top: 100px;
-            background-color: black;
+            background-color: $color-terciario;
             margin-bottom: 125px;
             padding: 6px;
             border-radius: 20px;
-            font-size: 35px;
-            font-family: "Lobster", sans-serif;
+            font-size: nth($font-size, 4);
+            font-family: $font-lobster;
             text-decoration: none;
             color: white;
             width: 300px;
@@ -141,13 +145,17 @@ main {
         .categoria{
             display: flex;
             flex-direction: column;
-            font-family: "Sedan", serif;
-            background-color: pink;
+            font-family: $font-sedan;
+            background-color: $color-secundario;
             border-radius: 20px;
             margin-top: 10px;
             margin-left: 5px;
             padding: 5px;
-        align-items: center;
+            align-items: center;
+
+
+            grid-column: 1/2;
+            grid-row: 1/3;
             h2{
 
             }
@@ -163,10 +171,7 @@ main {
             border-radius: 20px;
             padding: 10px;
             background-color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            @include flex (flex, center, center, column);
             flex-wrap: wrap;
             box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.44);
             -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.44);
@@ -179,23 +184,66 @@ main {
                 border-radius: 20px;
             }
             h3{
-                font-size: 25px;
-                font-family: "Sedan", serif;
+                font-size: nth($font-size, 3);
+                font-family: $font-sedan;
             }
             a{
                 font-size: 20px;
                 text-decoration: none;
                 color: white;
-                background-color: black;
+                background-color: $color-terciario;
                 margin: 4px;
                 padding: 6px;
                 border-radius: 20px;
                 &:hover{
                     background-color: gray;
-                color: black;
+                    color: black;
                 }
             }
             
+        }
+
+        .item-uno {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        
+        
+        .item-dos {
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        
+        
+        .item-tres {
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+        
+        .item-cuatro {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        
+        .item-cinco {
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        
+        .item-seis {
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+        
+        .item-siete{
+            grid-column: 2/3;
+            grid-row: 3/4;
+        
+        }
+        
+        .item-ocho {
+            grid-column: 3/4;
+            grid-row: 3/4;
         }
     }
 
@@ -210,35 +258,29 @@ main {
     .pedidos-personalizados-primer-bloque{
         padding: 30px;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex (flex, center, center, column);
         .separador{
             h2{
-                font-family: "Lobster", sans-serif;
-                font-size: 50px;
+                font-family: $font-lobster;
+                font-size: nth($font-size, 5);
                 text-decoration: none;
                 color: white;
                 display: flex;
                 justify-content: center;
                 width: 800px;
-                background-color: black;
+                background-color: $color-terciario;
                 border-radius: 20px;
             }
         }
         .pedidos-personalizados-primera-fila{
-            font-size: 25px;
-            font-family: "Sedan", serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            font-size: nth($font-size, 3);
+            font-family: $font-sedan;
+            @include flex (flex, center, center, column);
             width: 700px;
             height: 450px;
             margin-top: 20px;
             margin-bottom: 20px;
-            background-color: pink;
+            background-color: $color-secundario;
             padding: 50px;
             border-radius: 20px;
             p{
@@ -285,31 +327,33 @@ main{
         .separador{
             margin: 0;
             width: 100%;
-            display: flex;
-            justify-content: center;
+            @include flex (flex, center, center, row);
             h2{
-                font-family: "Lobster", sans-serif;
-                 font-size: 50px;
+                font-family: $font-lobster;
+                 font-size: nth($font-size, 5);
                 text-decoration: none;
                 color: white;
-                display: flex;
-                justify-content: center;
+                
+                //!EXTEND
+                @extend %flex-center;
+
+
                 width: 500px;
-                background-color: black;
+                background-color: $color-terciario;
                 border-radius: 20px;
                 margin-top: 30px;
             }
         }
         div{
-            display: flex;
-            justify-content: center;
+            //!EXTEND
+            @extend %flex-center;
             p{
-                font-family: "Sedan", serif;
-                font-size: 25px;
+                font-family: $font-sedan;
+                font-size: nth($font-size, 3);
                 display: flex;
                 justify-content: center;
                 margin: 25px;
-                background-color: pink;
+                background-color: $color-secundario;
                 padding: 20px;
                 border-radius: 20px;
                 width: 800px;
@@ -321,34 +365,36 @@ main{
         display: block;
         justify-content: center;
         align-items: center;
-        background-color: pink;
+        background-color: $color-secundario;
         border-radius: 20px;
         width: 60%;
         margin-left: 20%;
         .formulario-primera-fila{
-            display: flex;
-            justify-content: space-between;
+
+            //! MIXIN
+            
+            @include flex (flex, space-around, center, row);
             
             .name{
                 display: flex;
                 justify-content: center;
-                font-size: 25px;
-                font-family: "Sedan", serif;
+                font-size: nth($font-size, 3);
+                font-family: $font-sedan;
                 
                 margin-top: 90px;
                 padding: 30px;
-                background-color: black;
+                background-color: $color-terciario;
                 color: white;
                 border-radius: 20px;
             }
             .surname{
                 display: flex;
                 justify-content: center;
-                font-size: 25px;
-                font-family: "Sedan", serif;
+                font-size: nth($font-size, 3);
+                font-family: $font-sedan;
                 margin-top: 90px;
                 padding: 30px;
-                background-color: black;
+                background-color: $color-terciario;
                 color: white;
                 border-radius: 20px;
                 
@@ -356,18 +402,19 @@ main{
         }
 
         .formulario-segunda-fila{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+
+            //! MIXIN
+
+            @include flex (flex, space-around, center, row);
             height: 250px;
             
             .email{
                 display: flex;
-                font-family: "Sedan", serif;
-                font-size: 25px;
+                font-family: $font-sedan;
+                font-size: nth($font-size, 3);
                 
                 padding: 30px;
-                background-color: black;
+                background-color: $color-terciario;
                 color: white;
                 border-radius: 20px;
                 label{
@@ -379,11 +426,11 @@ main{
                 display: flex;
                 
                 margin-right: 155px;
-                font-size: 25px;
-                font-family: "Sedan", serif;
+                font-size: nth($font-size, 3);
+                font-family: $font-sedan;
                 margin-top: 40px;
                 padding: 30px;
-                background-color: black;
+                background-color: $color-terciario;
                 color: white;
                 border-radius: 20px;
                 label{
@@ -406,11 +453,11 @@ main{
         .pais{
             display: flex;
             justify-content: center;
-            font-size: 25px;
-            font-family: "Sedan", serif;
+            font-size: nth($font-size, 3);
+            font-family: $font-sedan;
             margin-top: 40px;
             padding: 30px;
-            background-color: black;
+            background-color: $color-terciario;
             color: white;
             border-radius: 20px;
             label{
@@ -426,8 +473,8 @@ main{
         .motivo{
             display: flex;
             justify-content: center;
-            font-size: 25px;
-            font-family: "Sedan", serif;
+            font-size: nth($font-size, 3);
+            font-family: $font-sedan;
             margin-top: 40px;
             padding-top: 30px;
             color: white;
@@ -437,10 +484,10 @@ main{
             }
             textarea{
                 display: flex;
-                font-family: "Sedan", serif;
-                font-size: 25px;
+                font-family: $font-sedan;
+                font-size: nth($font-size, 3);
                 padding: 30px;
-                background-color: black;
+                background-color: $color-terciario;
                 color: white;
                 border-radius: 20px;
             }
@@ -454,14 +501,17 @@ main{
             input{
                 display: flex;
                 justify-content: center;
-                font-size: 25px;
-                font-family: "Sedan", serif;
-                
+                font-size: nth($font-size, 3);
+                font-family: $font-sedan;
                 margin-top: 30px;
                 padding: 15px;
-                background-color: black;
+                background-color: $color-terciario;
                 color: white;
                 border-radius: 20px;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
             }
         }
     }
@@ -477,10 +527,11 @@ main {
     .acerca-de-primera-fila{
         display: flex;
         justify-content: space-around;
-        background-color: black;
+        background-color: $color-terciario;
         border-radius: 20px;
         margin-left: 100px;
         margin-right: 100px;
+        margin-top: 10px;
         div{
             width: 100%;
             display: flex;
@@ -498,15 +549,15 @@ main {
             justify-content: flex-end;
             color: white;
             margin: 90px 100px 90px 120px;
-            font-family: "Sedan", serif;
-            font-size: 25px;
+            font-family: $font-sedan;
+            font-size: nth($font-size, 3);
         }
     }
 
     .acerca-de-segunda-fila{
         display: flex;
         justify-content: space-around;
-        background-color: black;
+        background-color: $color-terciario;
         border-radius: 20px;
         margin-left: 100px;
         margin-right: 100px;
@@ -516,8 +567,8 @@ main {
             justify-content: flex-start;
             color: white;
             margin: 90px 100px 90px 120px;
-            font-family: "Sedan", serif;
-            font-size: 25px;
+            font-family: $font-sedan;
+            font-size: nth($font-size, 3);
         }
         div{
             width: 100%;

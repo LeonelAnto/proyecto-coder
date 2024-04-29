@@ -1,0 +1,50 @@
+/*----VARIABLES----*/
+
+$color-principal: rgba(252, 205, 213, 0.897);
+$color-secundario: pink;
+$color-terciario: black;
+
+$font-lobster:"Lobster", sans-serif;
+$font-sedan: "Sedan", serif;
+
+
+//! OPERACION EN INDEX MAIN .FONDO H1
+$size-title: 40px;
+
+/*----LISTAS----*/
+
+$font-size:
+12px,
+20px,
+25px,
+35px,
+50px;
+
+/*ej: nth($font-size, 1)*/
+
+/*----MAPAS----*/
+
+$boton:(
+    bg-boton:black,
+    borde: 20px,
+    padd: 6px,
+    text-color: white,
+);
+
+
+/*----EXTENDS----*/
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*----MIXINS----*/
+
+@mixin flex ($flex, $justify, $align, $direction){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

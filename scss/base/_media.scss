@@ -51,7 +51,7 @@
 
 /*----PRODUCTOS----*/
 
-@media screen and (max-width:1441px) {
+@media screen and (max-width:1466px) {
 
     main .grid-producto-primera-fila .grid-tarjeta-productos {
         width: 300px;
@@ -74,117 +74,114 @@
 
 
 
-@media screen and (max-width:1051px) {
+@media screen and (max-width:1078px) {
     main .grid-producto-primera-fila {
         grid-auto-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .categoria {
+    main .grid-producto-primera-fila .categoria {
         grid-column: 1/2;
         grid-row: 1/3;
     }
     
     
-    .item-uno {
+    main .grid-producto-primera-fila .item-uno {
         grid-column: 2/3;
         grid-row: 1/2;
     }
     
     
-    .item-dos {
+    main .grid-producto-primera-fila .item-dos {
         grid-column: 3/4;
         grid-row: 1/2;
     }
     
     
-    .item-tres {
+    main .grid-producto-primera-fila .item-tres {
         grid-column: 2/3;
         grid-row: 1/2;
     }
     
-    .item-cuatro {
+    main .grid-producto-primera-fila .item-cuatro {
         grid-column: 3/4;
         grid-row: 2/3;
     }
     
-    .item-cinco {
+    main .grid-producto-primera-fila .item-cinco {
         grid-column: 2/3;
         grid-row: 2/3;
     }
     
-    .item-seis {
+    main .grid-producto-primera-fila .item-seis {
         grid-column: 3/4;
         grid-row: 2/3;
     }
     
-    .item-siete{
+    main .grid-producto-primera-fila .item-siete{
         grid-column: 2/3;
         grid-row: 3/4;
     
     }
     
-    .item-ocho {
+    main .grid-producto-primera-fila .item-ocho {
         grid-column: 3/4;
         grid-row: 3/4;
     }
 }
 
-@media screen and (max-width:726px) {
-    .categoria {
+@media screen and (max-width:7px) {
+    main .grid-producto-primera-fila .categoria {
         font-size: 10px;
+        grid-column: 1/2;
+        grid-row: 1/3;
     }
 
     main .grid-producto-primera-fila {
         grid-auto-rows: 1fr;
         grid-template-columns: 1fr 1fr;
     }
-
-    .categoria {
-        grid-column: 1/2;
-        grid-row: 1/3;
-    }
     
     
-    .item-uno {
+    main .grid-producto-primera-fila .item-uno {
         grid-column: 2/3;
         grid-row: 1/2;
     }
     
     
-    .item-dos {
+    main .grid-producto-primera-fila .item-dos {
         grid-column: 2/3;
         grid-row: 1/2;
     }
     
     
-    .item-tres {
+    main .grid-producto-primera-fila .item-tres {
         grid-column: 2/3;
         grid-row: 1/2;
     }
     
-    .item-cuatro {
+    main .grid-producto-primera-fila .item-cuatro {
         grid-column: 2/3;
         grid-row: 2/3;
     }
     
-    .item-cinco {
+    main .grid-producto-primera-fila .item-cinco {
         grid-column: 2/3;
         grid-row: 2/3;
     }
     
-    .item-seis {
+    main .grid-producto-primera-fila .item-seis {
         grid-column: 2/3;
         grid-row: 2/3;
     }
     
-    .item-siete{
+    main .grid-producto-primera-fila .item-siete{
         grid-column: 2/3;
         grid-row: 3/4;
     
     }
     
-    .item-ocho {
+    main .grid-producto-primera-fila .item-ocho {
         grid-column: 2/3;
         grid-row: 3/4;
     }
@@ -200,56 +197,52 @@
         grid-template-columns: 1fr;
     }
     
-    .categoria {
+    main .grid-producto-primera-fila .categoria {
         font-size: 10px;
-    }
-
-    .categoria {
         grid-column: 1/2;
         grid-row: 1/2;
-    
     }
     
     
-    .item-uno {
+    main .grid-producto-primera-fila .item-uno {
         grid-column: 1/2;
         grid-row: 2/3;
     }
     
     
-    .item-dos {
+    main .grid-producto-primera-fila .item-dos {
         grid-column: 1/2;
         grid-row: 3/4;
     }
     
     
-    .item-tres {
+    main .grid-producto-primera-fila .item-tres {
         grid-column: 1/2;
         grid-row: 4/5;
     }
     
-    .item-cuatro {
+    main .grid-producto-primera-fila .item-cuatro {
         grid-column: 1/2;
         grid-row: 5/6;
     }
     
-    .item-cinco {
+    main .grid-producto-primera-fila .item-cinco {
         grid-column: 1/2;
         grid-row: 6/7;
     }
     
-    .item-seis {
+    main .grid-producto-primera-fila .item-seis {
         grid-column: 1/2;
         grid-row: 7/8;
     }
     
-    .item-siete{
+    main .grid-producto-primera-fila .item-siete{
         grid-column: 1/2;
         grid-row: 8/9;
     
     }
     
-    .item-ocho {
+    main .grid-producto-primera-fila .item-ocho {
         grid-column: 1/2;
         grid-row: 9/10;
     }
@@ -406,6 +399,10 @@
     main .formulario .formulario-primera-fila .surname {
         font-size: 12px;
         padding: 15px;
+    }
+
+    main .formulario .formulario-segunda-fila {
+        padding-top: 2px;
     }
 
     main .formulario .formulario-segunda-fila .email{
