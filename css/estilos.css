@@ -637,7 +637,13 @@ footer a .footer-logo {
     grid-row: 3/4;
   }
 }
-@media screen and (max-width: 7px) {
+@media screen and (max-width: 758px) {
+  main .grid-producto-primera-fila {
+    /*GRID*/
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
   main .grid-producto-primera-fila .categoria {
     font-size: 10px;
     grid-column: 1/2;
@@ -681,12 +687,6 @@ footer a .footer-logo {
   }
 }
 @media screen and (max-width: 420px) {
-  main .grid-producto-primera-fila {
-    /*GRID*/
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 1fr;
-  }
   main .grid-producto-primera-fila .categoria {
     font-size: 10px;
     grid-column: 1/2;
