@@ -25,13 +25,13 @@ main{
 
 
 .tipografia-nav {
-    font-family: "Sedan", serif;
+    font-family: $font-sedan;
     font-size: 20px;
     padding: 10px;
 }
 
 .tipografia-nav-logo {
-    font-family: "Lobster", sans-serif;
+    font-family: $font-lobster;
     font-size: 25px;
     margin-left: 10px;
     
@@ -47,4 +47,5 @@ main{
 .barra-de-navegacion-hover:hover {
     background-color: white;
     border-radius: 20px;
+    
 }
