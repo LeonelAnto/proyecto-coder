@@ -52,6 +52,11 @@ main {
 }
 
 .barra-de-navegacion-hover:hover {
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+}
+
+.barra-de-navegacion-hover:hover {
   background-color: white;
   border-radius: 20px;
 }
@@ -92,6 +97,8 @@ main .fondo h2 a {
   justify-content: center;
   display: flex;
   border: 1px solid black;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
 }
 main .fondo h2 a:hover {
   background-color: white;
@@ -156,6 +163,8 @@ main .tarjeta .tarjeta-productos a {
   padding: 6px;
   border-radius: 20px;
   border: 1px solid black;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
 }
 main .tarjeta .tarjeta-productos a:hover {
   background-color: white;
@@ -179,6 +188,8 @@ main .ver-mas a {
   justify-content: center;
   display: flex;
   border: 1px solid black;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
 }
 main .ver-mas a:hover {
   background-color: white;
@@ -243,9 +254,12 @@ main .grid-producto-primera-fila .grid-tarjeta-productos a {
   margin: 4px;
   padding: 6px;
   border-radius: 20px;
+  border: 1px solid black;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
 }
 main .grid-producto-primera-fila .grid-tarjeta-productos a:hover {
-  background-color: gray;
+  background-color: white;
   color: black;
 }
 main .grid-producto-primera-fila .item-uno {
@@ -464,6 +478,8 @@ main .formulario .enviar input {
   background-color: black;
   color: white;
   border-radius: 20px;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
 }
 main .formulario .enviar input:hover {
   background-color: white;

@@ -45,6 +45,12 @@ main{
 }
 
 .barra-de-navegacion-hover:hover {
+        transition-property: background-color, color;
+                transition-duration: 0.5s;  
+    
+}
+    
+.barra-de-navegacion-hover:hover {
     background-color: white;
     border-radius: 20px;
     

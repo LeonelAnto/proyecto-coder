@@ -43,6 +43,9 @@ main {
                 justify-content: center;
                 display: flex;
                 border: 1px solid black;
+
+                transition-property: background-color, color;
+                transition-duration: 0.5s;                
                 &:hover{
                 background-color: white;
                 color: black;
@@ -104,6 +107,9 @@ main {
                 padding: 6px;
                 border-radius: 20px;
                 border: 1px solid black;
+
+                transition-property: background-color, color;
+                transition-duration: 0.5s;  
                 &:hover {
                     background-color: white;
                     color: black;
@@ -129,6 +135,9 @@ main {
             justify-content: center;
             display: flex;
             border: 1px solid black;
+
+            transition-property: background-color, color;
+                transition-duration: 0.5s;  
             &:hover{
                 background-color: white;
                 color: black;
@@ -199,15 +208,19 @@ main {
                 font-family: $font-sedan;
             }
             a{
-                font-size: 20px;
+                font-size: nth($font-size, 2);
                 text-decoration: none;
                 color: white;
                 background-color: $color-terciario;
                 margin: 4px;
                 padding: 6px;
                 border-radius: 20px;
-                &:hover{
-                    background-color: gray;
+                border: 1px solid black;
+
+                transition-property: background-color, color;
+                transition-duration: 0.5s;  
+                &:hover {
+                    background-color: white;
                     color: black;
                 }
             }
@@ -520,6 +533,9 @@ main{
                 background-color: $color-terciario;
                 color: white;
                 border-radius: 20px;
+
+                transition-property: background-color, color;
+                transition-duration: 0.5s;  
                 &:hover{
                     background-color: white;
                     color: black;

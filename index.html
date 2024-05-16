@@ -7,6 +7,8 @@
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--AOS ANIMATE-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Shiny Pearlary | Collares & Accesorios</title>
@@ -14,6 +16,7 @@
     <meta name="description" content="
     Explora nuestra colección de collares y accesorios artesanales únicos, diseñados con pasión y cuidado. Encuentra piezas que reflejen tu estilo y personalidad en nuestra tienda en línea. ¡Descubre la artesanía auténtica y haz una declaración de moda con cada detalle!">
     <meta name="keywords" content="artesanal, perlas, perla, collar, collares, accesorios, accesorio, ">
+
 </head>
 
 <body>
@@ -21,6 +24,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
 
     <header>
         <nav class="navbar navbar-expand-lg barra-de-navegacion-color">
@@ -53,9 +63,9 @@
     <main>
         <section class="fondo">
 
-            <h1>Shiny Perlary</h1>
+            <h1 data-aos="fade-up">Shiny Perlary</h1>
 
-            <h2><a href="./pages/producto.html">Compra Ahora</a></h2>
+            <h2 data-aos="fade-up"><a href="./pages/producto.html">Compra Ahora</a></h2>
 
         </section>
 
@@ -63,22 +73,22 @@
             <p>Productos</p>
         </section>
 
-        <section class="tarjeta">
-            <div class="tarjeta-productos">
+        <section  class="tarjeta">
+            <div class="tarjeta-productos" data-aos="fade-up">
                 <img src="./images/sweet-princess.jfif" alt="Collar Sweet princess">
                 <h3>Collar Sweet princess</h3>
                 <h3>AR$6500</h3>
                 <a href="">Comprar</a>
             </div>
 
-            <div class="tarjeta-productos">
+            <div class="tarjeta-productos" data-aos="fade-up">
                 <img src="./images/pinky-bonbon.jfif" alt="Collar Pinky Bonbon">
                 <h3>Collar Pinky Bonbon</h3>
                 <h3>AR$6000</h3>
                 <a href="">Comprar</a>
             </div>
 
-            <div class="tarjeta-productos">
+            <div class="tarjeta-productos" data-aos="fade-up">
                 <img src="./images/cereza.jfif" alt="Collar Cereza">
                 <h3>Collar Cereza </h3>
                 <h3>AR$6500</h3>
@@ -86,7 +96,7 @@
             </div>
         </section>
 
-        <section class="ver-mas">
+        <section class="ver-mas" data-aos="zoom-in-up">
             <a href="./pages/producto.html">Ver mas Productos</a>
         </section>
     </main>
