@@ -160,7 +160,7 @@ main {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 20px;
         row-gap: 15px;
-        
+            
         .categoria{
             display: flex;
             flex-direction: column;
@@ -241,7 +241,7 @@ main {
         
         .item-tres {
             grid-column: 4/5;
-            grid-row: 1/2;
+            grid-row: 1/2; 
         }
         
         .item-cuatro {
@@ -256,18 +256,18 @@ main {
         
         .item-seis {
             grid-column: 4/5;
-            grid-row: 2/3;
+            grid-row: 2/3;   
         }
         
         .item-siete{
             grid-column: 2/3;
-            grid-row: 3/4;
+            grid-row: 3/4;   
         
         }
         
         .item-ocho {
             grid-column: 3/4;
-            grid-row: 3/4;
+            grid-row: 3/4;    
         }
     }
 
